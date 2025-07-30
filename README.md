@@ -2,12 +2,14 @@
 This project implements and compares Quantization-Aware Training (QAT) applied to Deep Q-Networks (DQN) against standard DQN models. The research focuses on maintaining performance while achieving model compression through quantization techniques.
 
 ### Installation
-#### Clone repository
+#### 1. Clone repository
 $ git clone https://github.com/jkw0701/qat_example.git
+
 $ cd qat_example
 
-#### Create and activate conda environment
+#### 2. Create and activate conda environment
 $ conda env create -f environment.yaml
+
 $ conda activate qat_rl_env
 
 #### Verify installation
