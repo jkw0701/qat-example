@@ -1,0 +1,19 @@
+name: qat_rl_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - matplotlib
+  - gym      # 또는 gymnasium, 원하는 버전 명시 가능
+  - moviepy
+  - imageio
+  - pip:
+      - torch  # pip로 최신 PyTorch (quantization fully 지원)
+      - torchvision
+      - torchaudio
+      - pygame
+      # 필요하다면 추가로
+      # - gymnasium  # gym 대체 최신 환경
