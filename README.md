@@ -1,43 +1,45 @@
-📋 Overview
+### Overview
 This project implements and compares Quantization-Aware Training (QAT) applied to Deep Q-Networks (DQN) against standard DQN models. The research focuses on maintaining performance while achieving model compression through quantization techniques.
 
-🛠️ Installation
-# Clone repository
-git clone https://github.com/jkw0701/qat_example.git
-cd qat_example
+### Installation
+#### Clone repository
+$ git clone https://github.com/jkw0701/qat_example.git
+$ cd qat_example
 
-# Create and activate conda environment
-conda env create -f environment.yaml
-conda activate qat_rl_env
+#### Create and activate conda environment
+$ conda env create -f environment.yaml
+$ conda activate qat_rl_env
 
-# Verify installation
-python -c "import torch; print(f'PyTorch version: {torch.__version__}')"
+#### Verify installation
+$ python -c "import torch; print(f'PyTorch version: {torch.__version__}')"
 
-🎮 Usage
--  Basic Training Pipeline
+ 
+### Usage
+#### Basic Training Pipeline
 1. Train Normal DQN (baseline)
-python test2.py --mode train_normal
+$ python test.py --mode train_normal
 
 2. QAT Transfer Learning (recommended)
-python test2.py --mode transfer_qat
+$ python test.py --mode transfer_qat
 
 3. Comprehensive Analysis
-python test2.py --mode compare
+$ python test.py --mode compare
 
 4. Real-time Simulation
-python test2.py --mode simulate
+$ python test.py --mode simulate
 
-- Advanced Options
-- Extended training
-python test2.py --mode transfer_qat --episodes 1000
+#### Advanced Options
+##### Extended training
+$ python test.py --mode transfer_qat --episodes 1000
 
-- Animation comparison
-python test2.py --mode animate
+##### Animation comparison
+$ python test.py --mode animate
 
-- Train both models from scratch
-python test2.py --mode train_both
+##### Train both models from scratch
+$ python test.py --mode train_both
 
-📄 License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
-👨‍💻 Author
+
+### Author
 Keunwoo Jang (Center for Humanoid Research, KIST)
