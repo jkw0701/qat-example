@@ -23,38 +23,38 @@ $ python -c "import torch; print(f'PyTorch version: {torch.__version__}')"
 #### Basic Training Pipeline
 1. Train Normal DQN (baseline)
 ```
-$ python test.py --mode train_normal
+$ (qat_rl_env) python3 test.py --mode train_normal
 ```
 
 2. QAT Transfer Learning (recommended)
 ```
-$ python test.py --mode transfer_qat
+$ (qat_rl_env) python3 test.py --mode transfer_qat
 ```
 
 3. Comprehensive Analysis
 ```
-$ python test.py --mode compare
+$ (qat_rl_env) python3 test.py --mode compare
 ```
 
 4. Real-time Simulation
 ```
-$ python test.py --mode simulate
+$ (qat_rl_env) python3 test.py --mode simulate
 ```
 
 #### Advanced Options
 ##### Extended training
 ```
-$ python test.py --mode transfer_qat --episodes 1000
+$ (qat_rl_env) python3 test.py --mode transfer_qat --episodes 1000
 ```
 
 ##### Animation comparison
 ```
-$ python test.py --mode animate
+$ (qat_rl_env) python3 test.py --mode animate
 ```
 
 ##### Train both models from scratch
 ```
-$ python test.py --mode train_both
+$ (qat_rl_env) python3 test.py --mode train_both
 ```
 
 ### License
