@@ -1,5 +1,5 @@
 ### Overview
-This project implements and compares Quantization-Aware Training (QAT) applied to Deep Q-Networks (DQN) against standard DQN models. The research focuses on maintaining performance while achieving model compression through quantization techniques.
+This project implements and compares Quantization-Aware Training (QAT) applied to Deep Q-Networks (DQN) and Convolutional Neural Network (CNN). The research focuses on maintaining performance while achieving model compression through quantization techniques.
 
 ### Installation
 #### 1. Clone repository
@@ -55,6 +55,11 @@ $ (qat_rl_env) python3 test.py --mode animate
 ##### Train both models from scratch
 ```
 $ (qat_rl_env) python3 test.py --mode train_both
+```
+
+##### CNN (CIFAR-10 dataset)
+```
+$ (qat_rl_env) python3 test_CIFAR.py
 ```
 
 ### License
