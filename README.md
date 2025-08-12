@@ -4,8 +4,8 @@ This project implements and compares Quantization-Aware Training (QAT) applied t
 ### Installation
 #### 1. Clone repository
 ```
-$ git clone https://github.com/jkw0701/qat_example.git
-$ cd qat_example
+$ git clone https://github.com/jkw0701/qat-example.git
+$ cd qat-example
 ```
 
 #### 2. Create and activate conda environment
